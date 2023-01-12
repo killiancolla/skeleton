@@ -1,0 +1,11 @@
+{
+    "name": "k-colla/squelette-canto",
+    "autoload": {
+        "psr-4": {
+            "App\\Controller\\": "controller/",
+            "App\\Model\\": "model/",
+            "App\\Util\\": "util/"
+        }
+    },
+    "require": {}
+}
