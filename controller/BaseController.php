@@ -48,6 +48,9 @@ class BaseController
         $params->action = $this->action;
         $params->url = \App\Util\UrlPath::add_post_data_to_url('', $_GET);
 
+        $params->sub_title = $this->sub_title ?? 'Default';
+        $params->title = $params->sub_title;
+
         include(APP_VIEW . $view_path);
     }
 }
